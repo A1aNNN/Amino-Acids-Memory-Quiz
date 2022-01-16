@@ -1,0 +1,497 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <script>
+    function allowDrop(ev) {
+        ev.preventDefault();
+        ev.dataTransfer.dropEffect = "move";
+    }
+ 
+    function dragStart(ev) {
+        ev.dataTransfer.setData("text", ev.target.id);
+    }
+ 
+    function dragDrop(ev) {
+        ev.preventDefault();
+        const data = ev.dataTransfer.getData("text/plain");
+        ev.target.appendChild(document.getElementById(data));
+    }
+    </script>
+
+</head>
+ 
+<body>
+    <div class="aminoacids">Amino Acids</div>
+     
+<p>Given the 20 common proteinogenic amino acid structures, drag the structures and match them to their appropriate name!</p>
+
+<!---below are the AA images-->
+<!----->
+<!----->
+    <div class="div1"
+         ondrop="dragDrop(event)"
+         ondragover="allowDrop(event)">
+     
+         <img id="img1" class="img1"
+          src="AA/glycine.jpg"
+          draggable="true"
+          ondragstart="dragStart(event)"
+          width="100"
+          height="100">
+
+    </div>
+
+    <div class="div2"
+        ondrop="dragDrop(event)"
+        ondragover="allowDrop(event)">
+
+        <img id="img2" class="img2"
+        src="AA/alanine.jpg"
+        draggable="true"
+        ondragstart="dragStart(event)"
+        width="100"
+        height="100">
+
+    </div>
+
+    <div class="div3"
+    ondrop="dragDrop(event)"
+    ondragover="allowDrop(event)">
+
+    <img id="img3" class="img3"
+    src="AA/valine.jpg"
+    draggable="true"
+    ondragstart="dragStart(event)"
+    width="100"
+    height="100">
+
+    </div>
+
+    <div class="div4"
+    ondrop="dragDrop(event)"
+    ondragover="allowDrop(event)">
+
+    <img id="img4" class="img4"
+    src="AA/leucine.jpg"
+    draggable="true"
+    ondragstart="dragStart(event)"
+    width="100"
+    height="100">
+
+    </div>
+
+
+    <div class="div5"
+    ondrop="dragDrop(event)"
+    ondragover="allowDrop(event)">
+
+    <img class="img5" id="img5"
+    src="AA/isoleucine.jpg"
+    draggable="true"
+    ondragstart="dragStart(event)"
+    width="100"
+    height="100">
+
+    </div>
+
+
+    <div class="div6"
+    ondrop="dragDrop(event)"
+    ondragover="allowDrop(event)">
+
+    <img class="img6" id="img6"
+    src="AA/aspartate.jpg"
+    draggable="true"
+    ondragstart="dragStart(event)"
+    width="100"
+    height="100">
+
+    </div>
+
+
+    <div class="div7"
+    ondrop="dragDrop(event)"
+    ondragover="allowDrop(event)">
+
+    <img class="img7" id="img7"
+    src="AA/glutamate.jpg"
+    draggable="true"
+    ondragstart="dragStart(event)"
+    width="100"
+    height="100">
+
+    </div>
+
+
+    <div class="div8"
+    ondrop="dragDrop(event)"
+    ondragover="allowDrop(event)">
+
+    <img id="img8" class="img8"
+    src="AA/asparagine.jpg"
+    draggable="true"
+    ondragstart="dragStart(event)"
+    width="100"
+    height="100">
+
+    </div>
+
+
+    <div class="div9"
+    ondrop="dragDrop(event)"
+    ondragover="allowDrop(event)">
+
+    <img class="img9" id="img9"
+    src="AA/glutamine.jpg"
+    draggable="true"
+    ondragstart="dragStart(event)"
+    width="100"
+    height="100">
+
+    </div>
+
+
+    <div class="div10"
+    ondrop="dragDrop(event)"
+    ondragover="allowDrop(event)">
+
+    <img class="img10" id="img10"
+    src="AA/proline.jpg"
+    draggable="true"
+    ondragstart="dragStart(event)"
+    width="100"
+    height="100">
+
+    </div>
+
+    <br/> <!---second row of AA structures-->
+
+
+    <div class="div11"
+    ondrop="dragDrop(event)"
+    ondragover="allowDrop(event)">
+
+    <img class="img11" id="img11"
+    src="AA/phenylalanine.jpg"
+    draggable="true"
+    ondragstart="dragStart(event)"
+    width="100"
+    height="100">
+
+    </div>
+
+
+    <div class="div12"
+    ondrop="dragDrop(event)"
+    ondragover="allowDrop(event)">
+
+    <img class="img12" id="img12"
+    src="AA/tryptophan.jpg"
+    draggable="true"
+    ondragstart="dragStart(event)"
+    width="100"
+    height="100">
+
+    </div>
+
+
+    <div class="div13"
+    ondrop="dragDrop(event)"
+    ondragover="allowDrop(event)">
+
+    <img class="img13" id="img13"
+    src="AA/lysine.jpg"
+    draggable="true"
+    ondragstart="dragStart(event)"
+    width="100"
+    height="100">
+
+    </div>
+
+
+    <div class="div14"
+    ondrop="dragDrop(event)"
+    ondragover="allowDrop(event)">
+
+    <img class="img14" id="img14"
+    src="AA/cysteine.jpg"
+    draggable="true"
+    ondragstart="dragStart(event)"
+    width="100"
+    height="100">
+
+    </div>
+
+
+    <div class="div15"
+    ondrop="dragDrop(event)"
+    ondragover="allowDrop(event)">
+
+    <img class="img15" id="img15"
+    src="AA/methionine.jpg"
+    draggable="true"
+    ondragstart="dragStart(event)"
+    width="100"
+    height="100">
+
+    </div>
+
+
+    <div class="div16"
+    ondrop="dragDrop(event)"
+    ondragover="allowDrop(event)">
+
+    <img class="img16" id="img16"
+    src="AA/tyrosine.jpg"
+    draggable="true"
+    ondragstart="dragStart(event)"
+    width="100"
+    height="100">
+
+    </div>
+
+
+    <div class="div17"
+    ondrop="dragDrop(event)"
+    ondragover="allowDrop(event)">
+
+    <img class="img17" id="img17"
+    src="AA/arginine.jpg"
+    draggable="true"
+    ondragstart="dragStart(event)"
+    width="100"
+    height="100">
+
+    </div>
+
+
+    <div class="div18"
+    ondrop="dragDrop(event)"
+    ondragover="allowDrop(event)">
+
+    <img class="img18" id="img18"
+    src="AA/histidine.jpg"
+    draggable="true"
+    ondragstart="dragStart(event)"
+    width="100"
+    height="100">
+
+    </div>
+
+
+    <div class="div19"
+    ondrop="dragDrop(event)"
+    ondragover="allowDrop(event)">
+
+    <img class="img19" id="img19"
+    src="AA/serine.jpg"
+    draggable="true"
+    ondragstart="dragStart(event)"
+    width="100"
+    height="100">
+
+    </div>
+
+
+    <div class="div20"
+    ondrop="dragDrop(event)"
+    ondragover="allowDrop(event)">
+
+    <img class="img20" id="img20"
+    src="AA/threonine.jpg"
+    draggable="true"
+    ondragstart="dragStart(event)"
+    width="100"
+    height="100">
+
+    </div>
+
+
+    <!----->
+    <!----->
+    <!--separation between options and answers-->
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br><br><br>
+
+    <!--start of the names for the AA-->
+
+    <div id="div101" class="div101"
+         ondrop="dragDrop(event)"
+         ondragover="allowDrop(event)">
+         Glycine (G)
+    </div>
+    
+    <div id="div102" class="div102"
+         ondrop="dragDrop(event)"
+         ondragover="allowDrop(event)">
+        Aspartate (D)
+    </div>
+
+
+    <div id="div103" class="div103"
+    ondrop="dragDrop(event)"
+    ondragover="allowDrop(event)">
+    Phenylalanine (F)
+    </div>
+
+
+    <div id="div104" class="div104"
+    ondrop="dragDrop(event)"
+    ondragover="allowDrop(event)">
+    Lysine (K)
+    </div>
+
+
+    <div id="div105" class="div105"
+    ondrop="dragDrop(event)"
+    ondragover="allowDrop(event)">
+    Cysteine (C)
+    </div>
+
+
+    <div id="div106" class="div106"
+    ondrop="dragDrop(event)"
+    ondragover="allowDrop(event)">
+    Threonine (T)
+    </div>
+
+
+    <div id="div107" class="div107"
+    ondrop="dragDrop(event)"
+    ondragover="allowDrop(event)">
+    Histidine (H)
+    </div>
+
+
+    <div id="div108" class="div108"
+    ondrop="dragDrop(event)"
+    ondragover="allowDrop(event)">
+    Asparagine (N)
+    </div>
+
+
+    <div id="div109" class="div109"
+    ondrop="dragDrop(event)"
+    ondragover="allowDrop(event)">
+    Glutamine (Q)
+    </div>
+
+
+    <div id="div110" class="div110"
+    ondrop="dragDrop(event)"
+    ondragover="allowDrop(event)">
+    Proline (P)
+    </div>
+
+
+    <div id="div111" class="div111"
+    ondrop="dragDrop(event)"
+    ondragover="allowDrop(event)">
+    Methionine (M)
+    </div>
+
+
+    <div id="div112" class="div112"
+    ondrop="dragDrop(event)"
+    ondragover="allowDrop(event)">
+    Valine (V)
+    </div>
+
+
+    <div id="div113" class="div113"
+    ondrop="dragDrop(event)"
+    ondragover="allowDrop(event)">
+    Alanine (A)
+    </div>
+
+
+    <div id="div114" class="div114"
+    ondrop="dragDrop(event)"
+    ondragover="allowDrop(event)">
+    Tryptophan (W)
+    </div>
+
+
+    <div id="div115" class="div115"
+    ondrop="dragDrop(event)"
+    ondragover="allowDrop(event)">
+    Arginine (R)
+    </div>
+
+
+    <div id="div116" class="div116"
+    ondrop="dragDrop(event)"
+    ondragover="allowDrop(event)">
+    Serine (S)
+    </div>
+
+
+    <div id="div117" class="div117"
+    ondrop="dragDrop(event)"
+    ondragover="allowDrop(event)">
+    Leucine (L)
+    </div>
+
+
+    <div id="div118" class="div118"
+    ondrop="dragDrop(event)"
+    ondragover="allowDrop(event)">
+    Glutamate (E)
+    </div>
+
+
+    <div id="div119" class="div119"
+    ondrop="dragDrop(event)"
+    ondragover="allowDrop(event)">
+    Tyrosine (Y)
+    </div>
+
+
+    <div id="div120" class="div120"
+    ondrop="dragDrop(event)"
+    ondragover="allowDrop(event)">
+    Isoleucine (I)
+    </div>
+
+
+    <!---make buttons-->
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <div class="button-div">
+        <button id="check" class="check">
+            Check Answers!
+        </button>
+
+        <br>
+        <br>
+
+        <button id="reset" class="reset" onClick="window.location.reload();">
+            Reset.
+        </button>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="index.js"></script>
+
+</body>
+</html>
